@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding-top: 2%;
+}
+
+header {
+    text-align: center;
+    padding: 2%;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+    padding-right: 2%;
+}
+
