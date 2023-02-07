@@ -3,8 +3,11 @@
     padding: 0;
 }
 
-body {
+html, body {
     font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .container {
@@ -30,3 +33,15 @@ header {
     padding-right: 2%;
 }
 
+footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background-color: #ecf0f1;
+}
+
+footer a {
+    color: black;
+}
