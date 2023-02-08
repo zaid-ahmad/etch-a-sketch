@@ -16,29 +16,25 @@
     <div class="container">
         <div class="settings"> 
             <div class="color">
-                <input type="color" id="favcolor" name="favcolor" value="#000000">
+                <input type="color" id="favcolor" name="favcolor" value="#000000" class="color-picker">
             </div>
 
             <div class="clear-button">
-                <button>Clear</button>
+                <button class="clr-btn">Clear</button>
             </div>
 
             <div class="slider">
-                <input type="range" min="0" max="100" value="2" class='range' oninput="getRangeValue(this.value)" onchange="getRangeValue(this.value)">
+                <input type="range" min="1" max="100" value="1" class='range' oninput="getRangeValue(this.value)" onchange="getRangeValue(this.value)">
                 <div class="grid-size">
-                    <p id="rangeValue">2</p>
+                    <p id="rangeValue">1</p>
                     <p>x</p>
-                    <p id="rangeValue2">2</p>
+                    <p id="rangeValue2">1</p>
                 </div>
-            </div>
-
-            <div class="rainbow">
-                <button>Rainbow Mode</button>
             </div>
         </div>
 
-        <div class="canvas" style="width: 500px; height: 500px;"> 
-            <!-- When dimension is 2x2, area of canvas = 2^2 = 4 and the area of each individual square=500/2 -->
+        <div class="canvas" style="width: 800px; height: 800px;"> 
+            <h3 class="intro">Select the size of grid to begin!</h3>
         </div>
     </div>
 

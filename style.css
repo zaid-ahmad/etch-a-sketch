@@ -14,7 +14,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;   
-    padding-top: 5%;
+    padding: 2% 0 2% 0;
 }
 
 header {
@@ -88,31 +88,6 @@ input[type="range"]::-moz-range-thumb {
     width: 1.5rem; ;
 }
 
-.rainbow button {
-    width: 160px;
-    height: 50px;
-    cursor: pointer;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-    border: none;
-    font-size: 18px;
-    color: #fff;
-    border-radius: 10px;
-	animation: gradient 8s ease infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 .settings {
     display: flex;
     flex-direction: column;
@@ -127,12 +102,8 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .box {
-    border: 1px solid black;
+    border: .1px solid #eee;
     transition: .1s;
-}
-
-.box:hover {
-    background-color: black;
 }
 
 .canvas {
@@ -141,8 +112,15 @@ input[type="range"]::-moz-range-thumb {
     background-color: #fff;
 }
 
+.canvas h3 {
+    text-align: center;
+    margin-top: 50%;
+    font-size: 24px;
+}
+
 footer {
     display: flex;
+    padding: 2%;
     gap: 10px;
     justify-content: center;
     align-items: center;
