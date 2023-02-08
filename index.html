@@ -16,7 +16,7 @@
     <div class="container">
         <div class="settings"> 
             <div class="color">
-                <input type="color" id="favcolor" name="favcolor" value="#000">
+                <input type="color" id="favcolor" name="favcolor" value="#000000">
             </div>
 
             <div class="clear-button">
@@ -24,22 +24,25 @@
             </div>
 
             <div class="slider">
-                <input type="range" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value">
-                <p id="rangeValue">50</p>
+                <input type="range" min="0" max="100" value="2" class='range' oninput="getRangeValue(this.value)" onchange="getRangeValue(this.value)">
+                <div class="grid-size">
+                    <p id="rangeValue">2</p>
+                    <p>x</p>
+                    <p id="rangeValue2">2</p>
+                </div>
             </div>
 
             <div class="rainbow">
                 <button>Rainbow Mode</button>
             </div>
         </div>
-    <!--
-        1. Make dynamic boxes
-        2. Style the settings more (add gradient like background to rainbow button)
 
-    -->
-
-        <div class="canvas" style="background-color: darkgoldenrod; width: 500px; height: 500px;"> 
-            
+        <div class="canvas" style="width: 500px; height: 500px;"> 
+            <!-- When dimension is 2x2, area of canvas = 2^2 = 4 and the area of each individual square=500/2 -->
+            <div class="box1 box"></div>
+            <div class="box2 box"></div>
+            <div class="box1 box"></div>
+            <div class="box2 box"></div>
         </div>
     </div>
 
@@ -47,5 +50,7 @@
         <p>&#169; Copyright 2023 | </p>
         <a href="https://github.com/zaidahmad25" target="_blank">Zaid Ahmad</a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
