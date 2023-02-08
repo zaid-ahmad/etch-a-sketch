@@ -127,8 +127,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .box {
-    width: 250px;
-    height: 250px;
     border: 1px solid black;
     transition: .1s;
 }
