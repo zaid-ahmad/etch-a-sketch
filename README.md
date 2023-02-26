@@ -2,6 +2,9 @@
 A browser version of something between a sketchpad and an Etch-A-Sketch.
 CREATE YOUR OWN PIXEL ART 🎨
 
+## Live Demo
+[Etch a sketch!](https://zaidahmad25.github.io/etch-a-sketch/)
+
 
 ## Features
 1. Change colour of the pen.
